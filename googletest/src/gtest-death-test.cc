@@ -1298,7 +1298,7 @@ GTEST_ATTRIBUTE_NO_SANITIZE_HWADDRESS_
 static bool StackGrowsDown() {
   int dummy;
   bool result;
-  StackLowerThanAddress(&dummy, &result);
+  StackLowerThanAddress(&result);
   return result;
 }
 #  endif  // GTEST_HAS_CLONE
